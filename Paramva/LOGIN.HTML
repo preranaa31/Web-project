@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+          background-color: #61b7df;
+        }
+        
+        .active {
+          background-color: #04AA6D;
+        }
+
+        
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="login.html">login</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="updation of college event details.html">updation of college event details.</a></li>
+        <li><a href="chatbot.html">Bot Paramva</a></li>
+    </ul>
+
+<h2>Login Form</h2>
+
+<form action="action.php">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png">
+  </div>
+  <div class="container">
+    <label for=""userType"><b>Login As:</b></label>
+    <select id=""userType"name="userType">
+    <option value="student">Student</option>
+    <option value="university">University</option>
+    <option value="tech team">TechTeam</option>
+  </select>
+  </div>
+
+  <div class="container">
+    <label for="name"><b>name</b></label>
+    <input type="text" name="name">
+
+    <label for="password"><b>password</b></label>
+    <input type="password" name="password">
+    
+    <label for="id"><b>id</b></label>
+    <input type="text" name="id" >
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw"><a href="#">Forgotpassword?</a></span>
+  </div>
+</form>
+
+</body>
+</html>
